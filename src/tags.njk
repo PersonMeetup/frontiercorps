@@ -1,0 +1,16 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - readme
+  addAllPagesToCollections: true
+layout: layouts/feed.njk
+eleventyComputed:
+  title: '{{ tag }}'
+permalink: /news/{{ tag | slug }}/
+---
+{% set articlegroup = collections[ tag ] %}
+{% include "articlelist_slim.njk" %}
