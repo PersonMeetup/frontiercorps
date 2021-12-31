@@ -1,5 +1,5 @@
 {% for article in articlegroup | reverse %}
-<figure>
+<figure class="{% if article.data.image %}hasImg{% endif %}">
     {% if article.data.image %}
     <a href="{{ article.url | url }}"><img src="{{ article.data.image }}" alt="{{ article.data.title }}"></a>
     {% endif %}

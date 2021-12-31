@@ -73,7 +73,7 @@ main div.news {
 main div.news.slim {
     display: block;
 }
-main div.news.slim figure {
+main div.news.slim figure.hasImg {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
