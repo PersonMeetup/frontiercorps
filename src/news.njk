@@ -3,12 +3,18 @@ title: Latest News
 layout: layouts/feed.njk
 ---
 <div>
-    <h2>Public Advisories</h2>
-    {% set articlegroup = collections['Public Advisories'] %}
-    {% include "articlelist.njk" %}
+    <h2 class="news">Public Advisories</h2>
+    <div class="news">    
+        {% set articlegroup = collections['Public Advisories'] | head(-3) %}
+        {% include "articlelist.njk" %}
+        <p><a class="ipfsButton" href="/news/public-advisories/">See more Public Advisories</a></p>
+    </div>
 </div>
 <div>
-    <h2>Press Releases</h2>
-    {% set articlegroup = collections['Press Releases'] %}
-    {% include "articlelist.njk" %}
+    <h2 class="news">Press Releases</h2>
+    <div class="news slim">
+        {% set articlegroup = collections['Press Releases'] | head(-3) %}
+        {% include "articlelist_slim.njk" %}
+        <p><a class="ipfsButton" href="/news/press-releases/">See more Press Releases</a></p>
+    </div>
 </div>

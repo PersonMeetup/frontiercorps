@@ -1,5 +1,6 @@
 main .docWidth {
     background-color: #fff;
+    padding-bottom: 1px;
     box-shadow: 0px 0px 20px #414141;
 }
 main article {
@@ -63,12 +64,25 @@ main section.news {
     min-height: 80px;
     border-bottom: 2px solid #000;
 }
+
 main div.news {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
 }
-main div.news h2 {
-    text-align: center;
+
+main div.news.slim {
+    display: block;
+}
+main div.news.slim figure {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+main div.news.slim img {
+    height: 100px;
+}
+
+main h2.news {
+    margin: 20px;
 }
 
 main div.news figure {
@@ -86,6 +100,10 @@ main div.news figure a {
 }
 main div.news figure a:hover {
     text-decoration: none;
+}
+
+main .navPad {
+    padding-top: 20px;
 }
 
 /* Special Header */
@@ -130,6 +148,9 @@ main section .ipfsButton {
 }
 main p a.ipfsButton {
     text-align: center;
+}
+main div.news a.ipfsButton {
+    margin-left: 20px;
 }
 
 /* Mobile */

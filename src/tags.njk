@@ -12,5 +12,7 @@ eleventyComputed:
   title: '{{ tag }}'
 permalink: /news/{{ tag | slug }}/
 ---
+<div class="news slim navPad">
 {% set articlegroup = collections[ tag ] %}
 {% include "articlelist_slim.njk" %}
+</div>
