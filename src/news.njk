@@ -1,0 +1,19 @@
+---
+title: Latest News
+layout: layouts/base.njk
+---
+<section class="news">
+    <h1>Latest News</h1>
+</section>
+<div class="news">
+    <div>
+        <h2>Public Advisories</h2>
+        {% set articlegroup = collections['Public Advisories'] %}
+        {% include "articlelist.njk" %}
+    </div>
+    <div>
+        <h2>Press Releases</h2>
+        {% set articlegroup = collections['Press Releases'] %}
+        {% include "articlelist.njk" %}
+    </div>
+</div>

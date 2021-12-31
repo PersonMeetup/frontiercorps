@@ -1,0 +1,3 @@
+Some files and images in this site are owned by [*Electronic Arts Inc.*](https://www.ea.com/) and [*Respawn Entertainment*](http://www.respawn.com/), who hold the copyright on *Titanfall*. All trademarks and registered trademarks present on this site are proprietary to *Electronic Arts Inc.*, with their usage defensible as [**fair use**](https://en.wikipedia.org/wiki/fair_use) under [United States copyright law](https://en.wikipedia.org/wiki/United_States_copyright_law).
+
+This site uses locally hosted icons and fonts from the [Google Fonts](https://fonts.google.com/) library. It also uses [Showdown](http://showdownjs.com/) for markdown parsing and [Neocities](https://neocities.org/) for hosting. For more information, see the [readme](/readme/).

@@ -1,0 +1,22 @@
+footer {
+    background-color: #a8d4a5;
+}
+footer div {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+footer div ul {
+    list-style: none;
+}
+footer div li {
+    margin-bottom: .2em;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    footer {
+        display: none;
+    }
+}

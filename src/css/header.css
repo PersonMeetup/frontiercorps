@@ -1,0 +1,155 @@
+header {
+    background-color: #f3efe6;
+    position: relative;
+}
+header nav {
+    display: flex;
+    align-items: center;
+    padding: 10px 50px;
+    justify-content: space-between;
+}
+header .navBar {
+    text-align: right;
+    list-style: none;
+    grid-gap: 50px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+header img {
+    height: 50px;
+}
+header .mobile {
+    display: none;
+}
+header button {
+    border: none;
+    background-color: #f3efe6;
+    padding: 0;
+}
+header button img {
+    height: 30px;
+}
+
+/* Nav-Bar Links */
+
+header .navBar a {
+    padding: 20px 0px;
+    color: #029eda;
+    text-decoration: none;
+}
+header .navBar li.dropdown {
+    display: inline-block;
+}
+header .navBar a:hover,
+header .navBar .active {
+    border-bottom: 4px solid #029eda;
+}
+header .dropContent {
+    display: none;
+    position: absolute;
+    top: 65.4px;
+    background-color: #f3efe6;
+    min-width: 90px;
+    z-index: 1;
+    border: 1px solid #e9dab7;
+}
+header .dropContent a {
+    padding: 10px;
+    display: block;
+    text-align: left;
+}
+header .navBar .dropdown:hover .dropContent {
+    display: block;
+}
+
+/* Mobile Sidebar */
+
+header div.mobile {
+    position: fixed;
+    display: block;
+    right: 0; top: 0;
+    width: 65%; height: 100vh;
+    background-color: #f3efe6;
+    z-index: 5;
+    overflow-y: auto;
+}
+header div.mobile ul {
+    list-style: none;
+    padding: 0;
+}
+header div.mobile li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e9dab7;
+}
+header div.mobile a {
+    padding: 15px 30px;
+    color: #029eda;
+    text-decoration: none;
+}
+header div.mobile article {
+    padding: 15px;
+}
+header div.mobile article a{
+    padding: 0;
+    text-decoration: underline;
+}
+header div.mobile button {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+header .fade {
+    background-color: #000000aa;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 3;
+}
+
+/* Mobile/Dropdown Links */
+
+header div.mobile article a:hover,
+header .navBar .dropContent a:hover {
+    border: none;
+    text-decoration: none;
+}
+header div.mobile a:hover,
+header .navBar .dropContent a:hover,
+header div.mobile a.active {
+    border-left: 4px solid #029eda;
+}
+
+/* Class Settings */
+
+#mobileMenu {
+    visibility: hidden;
+    opacity: 0;
+}
+body.open {
+    overflow: hidden;
+}
+.open {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+div.open {
+    width: 65%;
+    transition: all .5s;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    header nav {
+        padding: 10px 20px;
+    }
+    header .mobile {
+        display: flex;
+    }
+    header .desktop {
+        display: none;
+    }
+    header .mobile ul {
+        grid-gap: 20px;
+    }
+}

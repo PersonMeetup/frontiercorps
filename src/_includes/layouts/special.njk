@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+---
+<section class="special" style="background: url({{ image | url }}) center center / cover no-repeat;">
+    <div>
+        <h1>{{ title }}</h1>
+        <h3>{{ description }}</h3>
+    </div>
+</section>
+<article>
+    {{ content | safe }}
+</article>

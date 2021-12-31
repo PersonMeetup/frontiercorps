@@ -1,0 +1,169 @@
+main .docWidth {
+    background-color: #fff;
+    box-shadow: 0px 0px 20px #414141;
+}
+main article {
+    padding: 30px 180px;
+}
+main article h1 {
+    text-align: center;
+}
+
+main figure {
+    margin: 25px auto;
+}
+main figure img {
+    border: 1px solid #dcdcdc;
+}
+main figure figcaption {
+    text-align: center;
+}
+
+main blockquote {
+    margin: 25px 50px;
+    padding: 25px 50px;
+    border-left: 5px solid #029eda;
+}
+main blockquote p:last-child {
+    margin-bottom: 0;
+}
+main pre {
+    white-space: pre-wrap;
+    margin: 25px 0;
+    padding: 25px 35px;
+    background-color: #bdaaaa;
+    border-radius: 5px;
+}
+
+main ul,
+main ol {
+    margin-bottom: 1em;
+}
+main li {
+    font-size: 18px;
+    margin-bottom: .25em;
+}
+
+main section {
+    min-height: 360px;
+    display: grid;
+    color: #fff;
+}
+main section h1 {
+    margin-bottom: 0;
+}
+main section h3 {
+    margin-bottom: .5em;
+}
+
+/* News */
+main section.news {
+    background: #636363;
+    text-align: center;
+    min-height: 80px;
+    border-bottom: 2px solid #000;
+}
+main div.news {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main div.news h2 {
+    text-align: center;
+}
+
+main div.news figure {
+    margin: 0 20px 20px;
+    padding: 20px;
+    background-color: #afafaf;
+}
+main div.news figure figcaption {
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+main div.news figure a {
+    color: #029eda;
+}
+main div.news figure a:hover {
+    text-decoration: none;
+}
+
+/* Special Header */
+main .special {
+    border-bottom: 2px solid #000;
+    text-align: center;
+}
+main .special div {
+    align-self: end;
+}
+
+/* Index */
+main .index div {
+    align-self: center;
+    margin-left: 40px;
+}
+main .index:not(:last-child) {
+    border-bottom: 5px solid #fff;
+}
+
+/* IPFS Button */
+.ipfsButton {
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+    margin: auto;
+    padding: 5px 10px;
+
+    background: #f8bc30;
+    color: white;
+}
+.ipfsButton:hover {
+    text-decoration: underline;
+}
+main section .ipfsButton {
+    margin-bottom: 10px;
+}
+main p a.ipfsButton {
+    text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 660px) {
+    main section {
+        min-height: 280px;
+    }
+
+    main section.news {
+        min-height: 50px;
+        height: 50px;
+    }
+
+    main article {
+        padding: 30px 20px;
+    }
+
+    main .index {
+        height: auto;
+    }
+
+    main .index div {
+        margin: 0 20px;
+    }
+
+    main div.news {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 480px) {
+    main blockquote {
+        margin: 25px 15px;
+        padding: 25px;
+        border-left: 5px solid #029eda;
+    }
+}

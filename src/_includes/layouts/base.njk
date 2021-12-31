@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% if title %}{{ title }} - {% endif %}{{ metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+
+    <link rel="stylesheet" href="{{ '/css/boilerplate.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/header.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/footer.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/fonts.css' | url }}">
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <script src="{{ '/js/functions.js' | url }}"></script>
+</head>
+<body>
+    <header>
+        <nav class="docWidth desktop">
+            <a href="/"><img src="/img/Icon_Frontier_Corps.svg" alt="{{ metadata.title }}"></a>
+            <ul class="navBar">
+                <li><a href="/news/">News</a></li>
+                <!-- Credit to W3Schools for dropdown code: https://www.w3schools.com/Css/css_dropdowns.asp -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropButton">Get Involved</a>
+                    <div class="dropContent">
+                        <a href="/donate/">Donate</a>
+                        <a href="/volunteer/">Volunteer</a>
+                        <a href="/training/">Training</a>
+                    </div>
+                </li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
+        <nav class="docWidth mobile">
+            <a href="/"><img src="/img/Icon_Frontier_Corps.svg" alt="Frontier Corps"></a>
+            <ul class="navBar">
+                <li><a href="/news/">News</a></li>
+                <li><button onclick="mobileMenu();"><img src="/img/menu_black_24dp.svg" alt="Menu"></button></li>
+            </ul>
+        </nav>
+        <div id="mobileMenu">
+            <div class="mobile">
+                <button onclick="mobileMenu();"><img src="/img/close_black_24dp.svg" alt="Close"></button>
+                <ul>
+                    <li><a href="/news/">News</a></li>
+                    <li><a href="/donate/">Donate</a></li>
+                    <li><a href="/volunteer/">Volunteer</a></li>
+                    <li><a href="/training/">Training</a></li>
+                    <li><a href="/about/">About</a></li>
+                </ul>
+                <article>
+                    {% include "licence.md" %}
+                </article>
+            </div>
+            <div class="fade" onclick="mobileMenu();"></div>
+        </div>
+    </header>
+    <main>
+        <div class="docWidth">
+            {{ content | safe }}
+        </div>
+    </main>
+    <footer>
+        <div class="docWidth">
+            <ul>
+                <li><a href="/news/">News</a></li>
+                <li><a href="/donate/">Donate</a></li>
+                <li><a href="/volunteer/">Volunteer</a></li>
+                <li><a href="/training/">Training</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+            <article>
+                {% credits %}{% include "licence.md" %}{% endcredits %}
+            </article>
+        </div>
+    </footer>
+</body>
+</html>

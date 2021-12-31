@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body, html {
+    min-height: 100vh;
+    background-color: #d1d1d1;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    flex-grow: 1;
+}
+img {
+    max-width: 100%;
+}
+
+.docWidth {
+    max-width: 1080px;
+    margin: auto;
+}
+footer a,
+main a{
+    color: #029eda;
+}
+footer a:hover,
+main a:hover{
+    text-decoration: none;
+}

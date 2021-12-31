@@ -1,0 +1,8 @@
+{% for article in articlegroup | reverse %}
+<figure>
+    <a href="{{ article.url | url }}"><img src="{{ article.data.image }}" alt="{{ article.data.title }}"></a>
+    <h3>{{ article.data.title }}</h3>
+    <figcaption>{{ article.data.description }}</figcaption>
+    <a href="{{ article.url | url }}">Read More >></a>
+</figure>
+{% endfor %}
