@@ -1,6 +1,7 @@
 ---
 title: A Peak Behind the Curtain
-description: Formerly known as the README!
+description: Written for the initial launch, this originally served as the README.
+date: 2021-11-15
 layout: layouts/article.njk
 ---
 # A Peak Behind the Curtain
@@ -72,20 +73,3 @@ The EU's **General Data Protection Regulation** has been enforced [since May of 
 For this site GDPR wasn't too huge of a deal, except for one major thing: [Google Fonts](https://github.com/google/fonts/issues/1495). Since Google snags your IP (and possibly even more) anytime someone links their site to the Google Font's API, any site using them is going against regulation! Fortunately, [there's ways to get around the API](https://www.brycewray.com/posts/2020/08/good-stuff-without-google/). For this site I used [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) to download the WOFF/WOFF2 files, alongside the CSS code needed to get them working!
 
 Last bit of concern I had was with Showdown, as I planned to use a CDN to access the script rather than host it locally. (I wasn't in the mood to figure out how to do it when the documentation looked like another language) I chose to use their [CDNJS](https://cdnjs.com/) link, as from what I could vet from both [their GitHub issues](https://github.com/cdnjs/cdnjs/issues/13272) and [CloudFlare's GDPR policies](https://www.cloudflare.com/en-ca/gdpr/introduction/) it seems to be all clear.
-
-## Special Thanks
-
-- Manuel Matuzovic (for their [in-depth look into HTML boilerplates](https://www.matuzo.at/blog/html-boilerplate/))
-- [Apex Legends Wiki](https://apexlegends.fandom.com/wiki/Apex_Legends_Wiki)
-
-## Licences & Copyright
-
-Some files and images in this site are owned by [*Electronic Arts Inc.*](https://www.ea.com/) and [*Respawn Entertainment*](http://www.respawn.com/), who hold the copyright on *Titanfall*. All trademarks and registered trademarks present on this site are proprietary to *Electronic Arts Inc.*, with their usage defendable as [**fair use**](https://en.wikipedia.org/wiki/fair_use) under [United States copyright law](https://en.wikipedia.org/wiki/United_States_copyright_law).
-
-This site uses the IBM Plex Mono and Teko font families under the SIL Open Font License, 1.1. See [Google Fonts' Attribution page](https://fonts.google.com/attribution) for more information.
-
-This site thanks the following open source projects:
-- [google-webfonts-helper](https://github.com/majodev/google-webfonts-helper)
-- [showdownjs](https://github.com/showdownjs/showdown)
-- [cdnjs](https://github.com/cdnjs)
-- [neocities](https://github.com/neocities)
